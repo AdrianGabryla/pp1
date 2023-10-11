@@ -1,0 +1,6 @@
+father = input("Enter father's income: ")
+mother = input("Enter mother's income: ")
+family = input("Enter number of people in family: ")
+total_income = int(father) + int(mother)
+income_per_person = total_income/int(family)
+print(f"Total income: {total_income}. \nIncome per person: {income_per_person}.")
