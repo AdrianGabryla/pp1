@@ -1,0 +1,10 @@
+{
+      "title": "Example",
+      "year": 2000,
+      "actor": {
+            "leading": "Leonardo",
+            "supporting": "Brad"
+      },
+      "oscar": false,
+      "director": "Quentin"
+}
