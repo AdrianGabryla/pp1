@@ -1,5 +1,5 @@
-import json
 def f(years, course):
+    import json
     f = open("data.json")
     js = json.load(f)
     counter = 0
