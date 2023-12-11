@@ -2,7 +2,10 @@ import re
 def f(first_letter, last_letter):
     x = open("data.txt", "r", encoding="utf8")
     f = x.read()
-    words = re.findall("^{first_letter}.{last_letter}&", f)
+    words = []
+    for i in f.split():
+        if i[0] == first_letter and i[-1] == last_letter:
+            words.append(i)
     x.close()
     return words
 
