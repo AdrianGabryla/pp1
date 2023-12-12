@@ -6,8 +6,14 @@ def f(first_letter, last_letter):
     for i in f.split():
         if i[0] == first_letter and i[-1] == last_letter:
             words.append(i)
+        if i[-1] == "." or i[-1] == "," or i[-1] == '"':
+            if i[0] == first_letter and i[-2] == last_letter:
+                if "-" in i:
+                    continue
+                else:
+                    words.append(i)
     x.close()
-    return words
+    return len(words)
 
 if __name__=="__main__":
     print(f("w","d"))
